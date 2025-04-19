@@ -4,21 +4,92 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Tá no Carro</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Orbitron:wght@500&display=swap" rel="stylesheet">
   <style>
-    body { font-family: sans-serif; background: #f4f4f4; margin: 0; padding: 20px; }
-    h1 { text-align: center; }
-    .carros { display: flex; flex-wrap: wrap; gap: 20px; justify-content: center; }
-    .carro { background: #fff; border-radius: 10px; overflow: hidden; width: 300px; box-shadow: 0 2px 6px rgba(0,0,0,0.1); }
-    .carro img { width: 100%; height: 200px; object-fit: cover; }
-    .info { padding: 15px; }
-    .info h2 { margin: 0 0 10px; font-size: 18px; }
-    .info p { margin: 5px 0; font-weight: bold; color: green; }
-    .btn { display: inline-block; margin-top: 10px; padding: 10px; background: green; color: #fff; text-align: center; border-radius: 5px; text-decoration: none; width: 100%; }
+    body {
+      margin: 0;
+      padding: 0;
+      background: #ffffff;
+      font-family: 'Montserrat', sans-serif;
+      color: #333333;
+    }
+    header {
+      text-align: center;
+      padding: 40px 20px 20px;
+    }
+    header h1 {
+      font-family: 'Orbitron', sans-serif;
+      font-size: 36px;
+      color: #000000;
+      margin: 0;
+    }
+    header p {
+      margin-top: 8px;
+      font-size: 18px;
+    }
+    .carros {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+      padding: 0 20px 40px;
+    }
+    .carro {
+      background: #ffffff;
+      border: 1px solid #e5e5e5;
+      border-radius: 16px;
+      overflow: hidden;
+      width: 300px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+    }
+    .carro img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+    .info {
+      padding: 16px;
+    }
+    .info h2 {
+      font-family: 'Orbitron', sans-serif;
+      font-size: 20px;
+      color: #000000;
+      margin: 0 0 8px;
+    }
+    .info p {
+      font-size: 18px;
+      font-weight: bold;
+      color: #FD6700;
+      margin: 0 0 12px;
+    }
+    .btn {
+      display: block;
+      width: 100%;
+      padding: 12px;
+      text-align: center;
+      background: #FD6700;
+      color: #ffffff;
+      text-decoration: none;
+      border-radius: 8px;
+      transition: background 0.3s;
+    }
+    .btn:hover {
+      background: #e65c00;
+    }
+    footer {
+      text-align: center;
+      font-size: 14px;
+      color: #8f8f8f;
+      padding-bottom: 20px;
+    }
   </style>
 </head>
 <body>
-  <h1>Tá no Carro</h1>
-  <div class="carros">
+  <header>
+    <h1>Tá no Carro</h1>
+    <p>Seu portal de compra e venda de veículos</p>
+  </header>
+  <main class="carros">
     <div class="carro">
       <img src="https://source.unsplash.com/featured/?car" alt="Fiat Argo 2021">
       <div class="info">
@@ -35,6 +106,9 @@
         <a class="btn" href="https://wa.me/5599999999999" target="_blank">Falar no WhatsApp</a>
       </div>
     </div>
-  </div>
+  </main>
+  <footer>
+    © 2024 Tá no Carro. Todos os direitos reservados.
+  </footer>
 </body>
 </html>
